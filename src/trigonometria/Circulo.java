@@ -1,9 +1,15 @@
 package trigonometria;
 
+import java.util.Scanner;
+
 public class Circulo {
 
     int x,y;
     double radio;
+
+    public Circulo(){
+
+    }
 
     public Circulo(int x, int y, double radio) {
         this.x = x;
@@ -35,18 +41,24 @@ public class Circulo {
         this.radio = radio;
     }
 
-    private double calcularArea(){
+    protected double calcularArea(){
 
-        return Math.PI * Math.sqrt(this.radio);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce el radio del circulo a calcular");
+        this.radio = sc.nextDouble();
+        return Math.PI * Math.pow(this.radio,2);
 
     }
-    private double calcularDiametro(){
+    protected double calcularDiametro(){
 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce el radio del circulo a calcular");
+        this.radio = sc.nextDouble();
         return 2*this.radio;
 
     }
 
-    private int calcularDistancia(Circulo circulo){
+    protected int calcularDistancia(Circulo circulo){
 
         int max,min;
 

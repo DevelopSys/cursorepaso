@@ -1,5 +1,7 @@
 package trigonometria;
 
+import java.util.Scanner;
+
 public class Rectangulo {
 
     int altura, anchura;
@@ -7,6 +9,10 @@ public class Rectangulo {
     public Rectangulo(int altura, int anchura) {
         this.altura = altura;
         this.anchura = anchura;
+    }
+
+    public Rectangulo(){
+
     }
 
     public int getAltura() {
@@ -25,10 +31,23 @@ public class Rectangulo {
         this.anchura = anchura;
     }
 
-    private int calcularArea() {
+    protected int calcularArea() {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce la altura del rectángulo a calcular");
+        altura = sc.nextInt();
+        System.out.println("Introduce la anchura del rectángulo a calcular");
+        anchura = sc.nextInt();
+
         return this.altura * this.anchura;
     }
-    private int calcularPerimetro() {
+    protected int calcularPerimetro() {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce la altura del rectángulo a calcular");
+        altura = sc.nextInt();
+        System.out.println("Introduce la anchura del rectángulo a calcular");
+        anchura = sc.nextInt();
         return (2*this.altura) + (2 * this.anchura);
     }
 }
