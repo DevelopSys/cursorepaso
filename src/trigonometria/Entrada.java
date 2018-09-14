@@ -22,7 +22,7 @@ public class Entrada {
                 case 1:
                     do {
                         System.out.println(menus.menuCirculo());
-                        Circulo c;
+                        Circulo c = null;
                         opcionP = sc.nextInt();
                         switch (opcionP) {
                             case 1:
@@ -33,7 +33,15 @@ public class Entrada {
                                 c = new Circulo();
                                 System.out.println(String.format(mPer, c.getClass().getName(), c.calcularDiametro()));
                                 break;
-
+                            case 3:
+                                c = new Circulo();
+                                Scanner opCirculo = new Scanner(System.in);
+                                System.out.println("Introduce posición x del circulo 1");
+                                int x = opCirculo.nextInt();
+                                System.out.println("Introduce posición y del circulo 1");
+                                int y = opCirculo.nextInt();
+                                System.out.println("La distancia en x entre los dos círculos es: "+c.calcularDistancia(new Circulo(x,y)));
+                                break;
                             default:
                                 System.out.println("Opción incorrecta");
                                 break;
@@ -45,7 +53,7 @@ public class Entrada {
                     do {
                         System.out.println(menus.menuRectangulo());
                         opcionP = sc.nextInt();
-                        Rectangulo r;
+                        Rectangulo r = null;
                         switch (opcionP) {
                             case 1:
                                 r = new Rectangulo();
@@ -67,7 +75,7 @@ public class Entrada {
                     do {
                         System.out.println(menus.menuTriangulo());
                         opcionP = sc.nextInt();
-                        Triangulo t;
+                        Triangulo t = null;
                         switch (opcionP) {
                             case 1:
                                 t = new Triangulo();

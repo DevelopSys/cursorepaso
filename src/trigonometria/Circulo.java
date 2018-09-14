@@ -17,6 +17,11 @@ public class Circulo {
         this.radio = radio;
     }
 
+    public Circulo(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
     public int getX() {
         return x;
     }
@@ -60,6 +65,11 @@ public class Circulo {
 
     protected int calcularDistancia(Circulo circulo){
 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce posición x del circulo 2");
+        this.x = sc.nextInt();
+        System.out.println("Introduce posición y del circulo 2");
+        this.y = sc.nextInt();
         int max,min;
 
         if (this.x > circulo.getX()){
