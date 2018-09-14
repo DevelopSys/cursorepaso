@@ -2,25 +2,48 @@ package trigonometria;
 
 public class Menus {
 
-    private String menuGenerico(){
+    protected String menuGenerico() {
 
         String menu = "*** Calculadora trigonometrica *** \n" +
                 "1.- Operaciones con circulos\n" +
                 "2.- Operaciones con rectángulos\n" +
                 "3.- Operaciones con triágunlos\n" +
-                "4.- Salir\n";
-
+                "4.- Salir\n" +
+                "Introduce una opción: ";
         return menu;
     }
-    private String menuCirculo(){
 
-        String menuCirculo = "*** Calculadora circulos *** \n" +
+    protected String menuCirculo() {
+
+        String menuCr = "*** Calculadora circulos *** \n" +
                 "1.- Calcular área\n" +
                 "2.- Calcular perímetro\n" +
                 "3.- Calcular distancia\n" +
-                "4.- Atras\n";
+                "4.- Atras\n" +
+                "Introduce una opción: ";
 
-        return menuCirculo;
+        return menuCr;
+    }
+
+    protected String menuTriangulo() {
+
+        String menuTr = "*** Calculadora triángulos *** \n" +
+                "1.- Calcular área\n" +
+                "2.- Atras\n+ " +
+                "Introduce una opción: ";
+
+        return menuTr;
+    }
+
+    protected String menuRectangulo() {
+
+        String menuRc = "*** Calculadora rectángulos *** \n" +
+                "1.- Calcular área\n" +
+                "2.- Calcular perímetro\n" +
+                "3.- Atras\n" +
+                "Introduce una opción: ";
+
+        return menuRc;
     }
 
 }
