@@ -43,8 +43,9 @@ public class Entrada {
                                 System.out.println("La distancia en x entre los dos círculos es: "+c.calcularDistancia(new Circulo(x,y)));
                                 break;
                             default:
-                                System.out.println("Opción incorrecta");
-                                break;
+                                if (opcionP!=4){
+                                    System.out.println("Opción incorrecta");
+                                }                                break;
                         }
                         c = null;
                     } while (opcionP != 4);
@@ -65,8 +66,9 @@ public class Entrada {
                                 break;
 
                             default:
-                                System.out.println("Opción incorrecta");
-                                break;
+                                if (opcionP!=3){
+                                    System.out.println("Opción incorrecta");
+                                }                                break;
                         }
                         r = null;
                     }while(opcionP!=3);
@@ -82,13 +84,18 @@ public class Entrada {
                                 System.out.println(String.format(mArea, t.getClass().getName(), (float)t.calcularArea()));
                                 break;
                             default:
-                                System.out.println("Opción incorrecta");
+                                if (opcionP!=2){
+                                    System.out.println("Opción incorrecta");
+                                }
                                 break;
                         }
                         t = null;
                     }while(opcionP!=2);
                     break;
                 default:
+                    if (opcionP!=4){
+                        System.out.println("Opción incorrecta");
+                    }
                     break;
             }
         } while (opcionG != 4);
