@@ -1,6 +1,7 @@
 package puntos;
 
 import java.awt.*;
+import java.util.Scanner;
 
 public class Punto3D extends Point {
 
@@ -12,13 +13,18 @@ public class Punto3D extends Point {
         this.z = z;
     }
 
-    protected void mover(int x, int y, int z){
-        super.move(x,y);
+    public Punto3D(){
+
+    }
+
+    public void move(int x, int y, int z) {
+        super.move(x, y);
         this.z = z;
     }
-    protected void transladar(int x, int y, int z){
-        super.translate(x,y);
-        this.z = this.z + z;
+
+    public void translate(int dx, int dy, int dz) {
+        super.translate(dx, dy);
+        this.z += dz;
     }
 
     protected void distancia (Punto3D punto){
@@ -39,12 +45,20 @@ public class Punto3D extends Point {
         return z;
     }
 
+    protected  void crearPunto(){
+        System.out.println("Introduce la coordenada x");
+        x = new Scanner(System.in).nextInt();
+        System.out.println("Introduce la coordenada y");
+        y = new Scanner(System.in).nextInt();
+        System.out.println("Introduce la coordenada z");
+        z = new Scanner(System.in).nextInt();
+    }
+
+
     @Override
     public String toString() {
-        return "Punto3D{" +
-                "z=" + z +
-                ", x=" + x +
+        return  "x=" + x +
                 ", y=" + y +
-                '}';
+                ", z=" + z;
     }
 }
