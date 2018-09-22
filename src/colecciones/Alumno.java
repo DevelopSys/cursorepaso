@@ -1,4 +1,4 @@
-package Colecciones;
+package colecciones;
 
 public class Alumno {
 
