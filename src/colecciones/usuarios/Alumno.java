@@ -1,6 +1,8 @@
-package Colecciones.usuarios;
+package colecciones.usuarios;
 
-public class Alumno {
+import java.io.Serializable;
+
+public class Alumno implements Serializable {
 
     String nombre, apellido, dni;
     int telefono;

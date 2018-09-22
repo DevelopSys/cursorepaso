@@ -1,4 +1,4 @@
-package Colecciones.temperaturas;
+package colecciones.temperaturas;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
