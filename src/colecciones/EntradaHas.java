@@ -1,4 +1,4 @@
-package Colecciones;
+package colecciones;
 
 import java.util.Enumeration;
 import java.util.Hashtable;

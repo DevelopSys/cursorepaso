@@ -12,8 +12,8 @@ public abstract class Trabajador {
 
     public String mostrarDatos(){
 
-        String mensaje = "Los datos del trabajador son Nombre: %s Apellido: %s DNI: %s y es de tipo %s";
-        return String.format(mensaje,getNombre(),getApellido(),getDni(),getClass().getCanonicalName()) ;
+        String mensaje = "Los datos del trabajador son Nombre: %s Apellido: %s DNI: %s y es de tipo %s ";
+        return String.format(mensaje,getNombre(),getApellido(),getDni(),getClass().getSimpleName()) ;
     }
 
     public abstract void calcularSaldoMes();
