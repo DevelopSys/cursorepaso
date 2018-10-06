@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 public abstract class Llamada implements Serializable {
 
+    //
     int nOrigen, nDestino, duracion;
     double coste;
 

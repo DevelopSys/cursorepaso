@@ -1,7 +1,7 @@
 package examen;
 
 public class LlamadaNacional extends Llamada{
-
+    //
     String franja;
 
     public LlamadaNacional(int nOrigen, int nDestino, int duracion, String franja) {

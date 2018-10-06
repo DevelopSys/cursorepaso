@@ -4,6 +4,7 @@ public class Menu {
 
     protected String menuGenerico() {
 
+        //
         String menu = "*** Centralita de llamadas *** \n" +
                 "1.- Registrar llamadas\n" +
                 "2.- Listar llamadas\n" +

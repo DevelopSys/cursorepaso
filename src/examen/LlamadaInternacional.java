@@ -2,6 +2,7 @@ package examen;
 
 public class LlamadaInternacional extends Llamada {
 
+    //
     String continente;
 
     public void setContinente(String continente) {
