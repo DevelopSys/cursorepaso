@@ -1,7 +1,6 @@
-package Colecciones.usuarios;
+package colecciones.usuarios;
 
 
-import java.io.*;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -14,8 +13,7 @@ public class Entrada {
         int opcion = 0;
 
         do {
-            m.menuGenerico();
-            System.out.println("Introduce opción");
+            System.out.println(m.menuGenerico());
 
             try {
                 opcion = sc.nextInt();
@@ -34,7 +32,7 @@ public class Entrada {
                         int telefono = sc.nextInt();
                         System.out.println("Introduce dni");
                         String dni = sc.next();
-                        o.agregar(new Alumno(nombre,apellido,dni,telefono));
+                        o.agregar(new Alumno(nombre, apellido, dni, telefono));
                     } catch (InputMismatchException e) {
                         System.out.println("Dato introducido incorrecto");
                     }
@@ -45,6 +43,7 @@ public class Entrada {
 
                         System.out.println("Introduce dni a buscar");
                         String dni = sc.next();
+                        o.buscar(dni);
 
                     } catch (NumberFormatException e) {
                         System.out.println("Dato introducido incorrecto");

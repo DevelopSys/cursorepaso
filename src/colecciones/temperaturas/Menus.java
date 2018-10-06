@@ -1,4 +1,4 @@
-package Colecciones.temperaturas;
+package colecciones.temperaturas;
 
 public class Menus {
 
