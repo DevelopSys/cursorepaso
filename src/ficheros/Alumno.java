@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 public class Alumno implements Serializable {
 
+    // modificacion
+
     String nombre, apellido, dni;
     int matricula;
 
